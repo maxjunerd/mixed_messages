@@ -31,4 +31,8 @@ messages = [
         message: "Embrace the present moment fully and with passion, because only through the present moment do we truly live.",
         author: "Richard L. Haight"
     }
-]
+];
+
+random = Math.floor(Math.random() * messages.length);
+
+console.log(`Today message is: ${messages[random]["message"]} by ${messages[random]["author"]}`);
